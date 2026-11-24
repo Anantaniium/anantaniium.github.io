@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://anantsingh.github.io/sitemap.xml
+Sitemap: https://anantaniium.github.io/sitemap.xml
