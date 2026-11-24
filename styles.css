@@ -707,3 +707,186 @@ html[data-theme="dark"] .press-feature-bottom { color: #bbc7ba; border-color: rg
   opacity: 1;
   transform: translate(2px, -2px);
 }
+
+/* =========================================================
+   1. FIX PRESS CARD TOP ROW & LOGO SQUIRCLE SIZING
+   ========================================================= */
+.press-feature-top,
+.press-card-top {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 0.85rem !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin-bottom: 1.15rem !important;
+}
+
+.pub-squircle {
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  max-width: 34px !important;
+  min-height: 34px !important;
+  max-height: 34px !important;
+  border-radius: 9px !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 5px !important;
+  overflow: hidden !important;
+  flex-shrink: 0 !important;
+}
+
+.pub-squircle img {
+  width: 22px !important;
+  height: 22px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
+  object-fit: contain !important;
+  border-radius: 4px !important;
+  margin: 0 !important;
+  display: block !important;
+}
+
+/* =========================================================
+   2. FIX SOCIAL DIRECTORY ICON SIZING
+   ========================================================= */
+.directory-item .dir-left {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.6rem !important;
+}
+
+.directory-item .dir-icon,
+.directory-item svg {
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  max-width: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  flex-shrink: 0 !important;
+  display: inline-block !important;
+}
+
+/* =========================================================
+   3. REFINED, SMALLER RIGVEDA EPIGRAPH TYPOGRAPHY
+   ========================================================= */
+.footer-epigraph {
+  padding: 2.5rem 1.5rem 1.5rem !important;
+  max-width: 680px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.epigraph-card {
+  padding: 1.65rem 1.25rem !important;
+}
+
+.epigraph-sanskrit {
+  font-family: 'Noto Serif Devanagari', serif !important;
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem) !important;
+  line-height: 1.85 !important;
+  margin-bottom: 0.65rem !important;
+}
+
+.epigraph-english {
+  font-size: 0.86rem !important;
+  line-height: 1.6 !important;
+  max-width: 58ch !important;
+  margin: 0 auto 0.75rem !important;
+}
+
+.epigraph-source {
+  font-size: 0.66rem !important;
+  letter-spacing: 0.08em !important;
+}
+
+.epigraph-source span[lang="sa"] {
+  font-size: 0.74rem !important;
+}
+
+/* =========================================================
+   FIX TALKS ROW & BADGE HORIZONTAL ALIGNMENT
+   ========================================================= */
+.talk-item {
+  display: grid !important;
+  grid-template-columns: 95px minmax(0, 1fr) auto !important;
+  gap: 1.5rem !important;
+  align-items: start !important;
+  padding: 1.35rem 0 !important;
+}
+
+.talk-year {
+  white-space: nowrap !important;
+  font-size: 0.78rem !important;
+  padding-top: 0.2rem !important;
+}
+
+.talk-body {
+  min-width: 0 !important;
+}
+
+.talk-meta {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 0.5rem !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+
+.talk-badge,
+.talk-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.25rem !important;
+  white-space: nowrap !important;
+  font-size: 0.68rem !important;
+  line-height: 1 !important;
+  padding: 0.36rem 0.65rem !important;
+  border-radius: 6px !important;
+  letter-spacing: 0.06em !important;
+}
+
+.talk-badge--invited {
+  color: var(--accent, #D94E34) !important;
+  border: 1px solid rgba(217, 78, 52, 0.45) !important;
+  background: rgba(217, 78, 52, 0.08) !important;
+}
+
+.talk-badge--conference,
+.talk-badge--poster,
+.talk-badge--workshop {
+  color: inherit !important;
+  opacity: 0.75 !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+}
+
+.talk-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), background 0.2s ease !important;
+}
+
+.talk-link:hover {
+  transform: translateY(-1px) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Stack cleanly on mobile screens */
+@media (max-width: 720px) {
+  .talk-item {
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important;
+  }
+  .talk-meta {
+    justify-content: flex-start !important;
+    margin-top: 0.35rem !important;
+  }
+}
