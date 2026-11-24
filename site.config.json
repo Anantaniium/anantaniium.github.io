@@ -1,19 +1,21 @@
 {
-  "siteUrl": "https://anantsingh.github.io",
+  "siteUrl": "https://anantaniium.github.io",
   "siteName": "Anant Singh",
   "siteTitle": "Anant Singh — Astrophysics, Physics Education & Public Engagement",
   "description": "Anant Singh is a Physics Master's student at Université Paris Cité, an astrophysics researcher and Vice President of the International Association of Physics Students (IAPS). His work connects astrophysics, physics education, public engagement and international scientific cooperation.",
-  "email": "anant.singh@iaps.info",
-  "location": "Paris, France · New Delhi, India",
-  "portraitImage": "",
+  "email": "anant.singh@iaps.info", 
+  "email": "anantsingh.info@gmail.com",
+  "location": "Paris, France", 
+  "location": "Delhi, India",
+  "portraitImage": "/assets/mypicICPS24.jpg",
   "ogImage": "/assets/og-image.png",
   "cvPdf": "",
   "socials": {
     "linkedin": "https://www.linkedin.com/in/anantaniium/",
-    "github": "https://github.com/anantsingh",
+    "github": "https://github.com/anantaniium",
     "instagram": "https://www.instagram.com/anantaniium/",
     "youtube": "https://www.youtube.com/@anantaniium",
-    "orcid": "",
+    "orcid": "https://orcid.org/0009-0006-4503-9592",
     "googleScholar": ""
   },
   "links": {
