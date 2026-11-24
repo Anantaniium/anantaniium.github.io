@@ -2,21 +2,21 @@
 
 > Anant Singh is a Physics Master's student at Université Paris Cité, an astrophysics researcher and Vice President of the International Association of Physics Students (IAPS). His work connects astrophysics, physics education, public engagement and international scientific cooperation.
 
-Canonical website: https://anantsingh.github.io/
-Contact: anant.singh@iaps.info
+Canonical website: https://anantaniium.github.io/
+Contact: anant.singh@iaps.info, anantsingh.info@gmail.com
 Location: Paris, France · New Delhi, India
 
 ## Profile
 Anant Singh is a Master's student in Physics at Université Paris Cité, an astrophysics researcher, Vice President and Outreach and Advocacy Manager of the International Association of Physics Students (IAPS), and Founder and Chairperson of the Governing Council of the Indian Network of Physics Students (INPS).
 
 ## Sections
-- About: https://anantsingh.github.io/#about
-- Research and academic work: https://anantsingh.github.io/#research
-- Physics education, outreach and public engagement: https://anantsingh.github.io/#practice
-- Institutional leadership and international cooperation: https://anantsingh.github.io/#leadership
-- Media, speaking and press: https://anantsingh.github.io/#press
-- Ventures and science communication: https://anantsingh.github.io/#initiatives
-- Contact: https://anantsingh.github.io/#contact
+- About: https://anantaniium.github.io/#about
+- Research and academic work: https://anantaniium.github.io/#research
+- Physics education, outreach and public engagement: https://anantaniium.github.io/#practice
+- Institutional leadership and international cooperation: https://anantaniium.github.io/#leadership
+- Media, speaking and press: https://anantaniium.github.io/#press
+- Ventures and science communication: https://anantaniium.github.io/#initiatives
+- Contact: https://anantaniium.github.io/#contact
 
 ## Research areas
 Observational cosmology; multi-messenger astrophysics; high-energy astrophysics; Fast Radio Bursts; gamma-ray astronomy; atmospheric physics; satellite engineering; physics education research; science communication; science outreach; science diplomacy; science policy; international scientific cooperation.
@@ -26,7 +26,7 @@ Observational cosmology; multi-messenger astrophysics; high-energy astrophysics;
 - IUPAP AC5: https://iupap.org/who-we-are/internal-organization/affiliated-commissions/ac5-affiliated-commission-of-physics-students/
 - INPS: https://www.inps.info/
 - LinkedIn: https://www.linkedin.com/in/anantaniium/
-- GitHub: https://github.com/anantsingh
+- GitHub: https://github.com/anantaniium
 - YouTube: https://www.youtube.com/@anantaniium
 - Instagram: https://www.instagram.com/anantaniium/
 
