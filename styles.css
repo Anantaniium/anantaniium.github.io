@@ -1008,3 +1008,59 @@ html[data-theme="dark"] .press-feature-bottom { color: #bbc7ba; border-color: rg
     grid-template-columns: 1fr !important;
   }
 }
+
+
+/* =========================================================
+   CLEAN HERO PORTRAIT CARD (NO ORBITAL CURVES OR DEAD SPACE)
+   ========================================================= */
+
+/* 1. Kill the CSS pseudo-element orbital curves */
+.portrait-frame::before,
+.portrait-frame::after,
+.hero-visual::before,
+.hero-visual::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* 2. Remove fixed tall height & shape the outer matte box */
+.portrait-frame {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 390px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
+  padding: 12px !important; /* Creates a clean editorial gallery frame around the photo */
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 26px !important; /* ~10% smooth rounded corners */
+  box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.45) !important;
+  overflow: hidden !important;
+  margin-left: auto !important;
+}
+
+/* 3. Cleanly round the inner photo to match the frame */
+.portrait-img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 4 / 5 !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  border-radius: 18px !important;
+  display: block !important;
+  margin: 0 !important;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+.portrait-frame:hover .portrait-img {
+  transform: scale(1.02) !important;
+}
+
+/* Center cleanly on mobile/tablet */
+@media (max-width: 900px) {
+  .portrait-frame {
+    margin: 0 auto !important;
+    max-width: 340px !important;
+  }
+}
