@@ -477,3 +477,233 @@ html[data-theme="dark"] .press-feature-bottom { color: #bbc7ba; border-color: rg
 .credential-note { display: inline-block; width: fit-content; margin-top: 7px; padding: 4px 7px; border: 1px solid var(--line); color: var(--green-dark); font-family: var(--mono); font-size: 9px; letter-spacing: .08em; }
 .institution-links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px; }
 @media (max-width: 640px) { .about-note p { font-size: 19px; } .institution-links { gap: 12px; } }
+
+
+.pub-squircle {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px; /* Smooth squircle curve */
+  background: #ffffff;
+  border: 1px solid rgba(17, 19, 21, 0.12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #111315;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.pub-squircle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px; /* Softens inner edges if the source icon is a full-bleed square */
+  display: block;
+}
+
+.press-feature:hover .pub-squircle {
+  transform: scale(1.05);
+}
+
+.talk-item {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border, rgba(17, 19, 21, 0.1));
+}
+
+.talk-body h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.talk-venue {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.78;
+}
+
+.talk-summary {
+  margin: 0.5rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  opacity: 0.7;
+  max-width: 62ch;
+}
+
+/* Right column: holds badge + optional link cleanly */
+.talk-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.talk-badge {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  padding: 0.28rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+
+/* Subtle semantic distinction without visual clutter */
+.talk-badge--invited {
+  color: var(--accent, #D94E34); /* Uses your 10% accent color for keynotes/invited talks */
+  background: rgba(217, 78, 52, 0.07);
+}
+
+.talk-badge--conference,
+.talk-badge--poster,
+.talk-badge--workshop {
+  opacity: 0.75;
+  background: transparent;
+}
+
+.talk-link {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  padding: 0.28rem 0.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid var(--border, rgba(17, 19, 21, 0.18));
+  color: inherit;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), background 0.2s ease;
+}
+
+.talk-link:hover {
+  transform: translateY(-1px);
+  background: rgba(127, 127, 127, 0.1);
+}
+
+/* Mobile adaptation */
+@media (max-width: 680px) {
+  .talk-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .talk-meta {
+    margin-top: 0.25rem;
+  }
+}
+
+.footer-epigraph {
+  padding: 3.5rem 1.5rem 2rem;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.epigraph-card {
+  margin: 0;
+  padding: 2.25rem 1.5rem;
+  border-top: 1px solid var(--border, rgba(17, 19, 21, 0.12));
+  border-bottom: 1px solid var(--border, rgba(17, 19, 21, 0.12));
+}
+
+.epigraph-sanskrit {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.9; /* Prevents upper/lower vowel matras from touching across lines */
+  letter-spacing: 0.01em;
+  margin: 0 0 0.85rem;
+  color: var(--text, #111315);
+}
+
+.epigraph-english {
+  font-size: 0.96rem;
+  font-style: italic;
+  line-height: 1.65;
+  opacity: 0.82;
+  max-width: 64ch;
+  margin: 0 auto 1rem;
+}
+
+.epigraph-source {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--accent, #D94E34);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.epigraph-source span[lang="sa"] {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+.directory {
+  display: block; /* Forces eyebrow label to stay on its own top line */
+}
+
+.directory > .eyebrow {
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.directory-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.directory-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+  color: inherit;
+  transition: padding-left 0.22s cubic-bezier(0.22, 1, 0.36, 1), color 0.2s ease;
+}
+
+.dir-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.dir-icon {
+  width: 17px;
+  height: 17px;
+  opacity: 0.72;
+  transition: opacity 0.2s ease, transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dir-arrow {
+  opacity: 0.6;
+  transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
+}
+
+.directory-item:hover {
+  padding-left: 0.5rem;
+}
+
+.directory-item:hover .dir-icon {
+  opacity: 1;
+  color: var(--accent, #D94E34);
+}
+
+.directory-item:hover .dir-arrow {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
