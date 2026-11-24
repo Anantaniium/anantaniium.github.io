@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{{SITE_TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="author" content="Anant Singh">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="profile">
+  <meta property="profile:first_name" content="Anant">
+  <meta property="profile:last_name" content="Singh">
+  <meta property="og:site_name" content="Anant Singh">
+  <meta property="og:title" content="{{SITE_TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Anant Singh — Astrophysics, Physics Education and Public Engagement">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{SITE_TITLE}}">
+  <meta name="twitter:description" content="{{DESCRIPTION}}">
+  <meta name="twitter:image" content="{{OG_IMAGE}}">
+  <meta name="theme-color" content="#f3f3ed">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;450;500;550;600;650;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('anant-theme');
+        const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = saved || preferred;
+      } catch (_) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="application/ld+json">{{JSON_LD}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="Anant Singh — home">ANANT<span class="wordmark-dot">.</span></a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#practice">Education & outreach</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#press">Press</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+        <button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.7"/><path d="M12 2v2.1M12 19.9V22M4.93 4.93l1.48 1.48m11.18 11.18 1.48 1.48M2 12h2.1m15.8 0H22M4.93 19.07l1.48-1.48M17.59 6.41l1.48-1.48"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.7 8.7 0 0 1 8.9 3.8 8.8 8.8 0 1 0 20.2 15.1Z"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#practice">Education & outreach</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#press">Media & speaking</a>
+      <a href="#initiatives">Ventures</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO: Replace the portrait placeholder with your own licensed portrait. Keep the aspect ratio and alt text. -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-topline wrap">
+        <span class="eyebrow eyebrow--light">{{LOCATION}}</span>
+        <span class="eyebrow eyebrow--light">PERSONAL PROFILE <i>—</i> 2026</span>
+      </div>
+      <div class="hero-grid wrap">
+        <div class="hero-copy">
+          <p class="hero-kicker"><span class="signal signal--green"></span> RESEARCH · EDUCATION · PUBLIC ENGAGEMENT</p>
+          <h1 id="hero-title">Anant<br><span>Singh</span><sup>°</sup></h1>
+          <p class="hero-role">Astrophysics <span>·</span> Physics Education <span>·</span> Public Engagement</p>
+          <p class="hero-intro">A student in the Paris Physics Master, an astrophysics researcher, and Vice President of the International Association of Physics Students (IAPS), bringing opportunities to places they often miss.</p>
+          <div class="hero-actions">
+            <a class="button button--light" href="#research">Explore the work <span aria-hidden="true">↘</span></a>
+            <a class="text-link text-link--light" href="#press-kit">Press bio / CV <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-footnote"><span class="hero-footnote-line"></span><span>Researching the universe. Widening access to its study.</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="portrait-frame" aria-label="Portrait photograph">
+            {{PORTRAIT_CONTENT}}
+            <div class="portrait-orbit portrait-orbit--one"></div>
+            <div class="portrait-orbit portrait-orbit--two"></div>
+            <div class="portrait-crosshair portrait-crosshair--a"></div>
+            <div class="portrait-crosshair portrait-crosshair--b"></div>
+            <div class="portrait-caption"><span>PORTRAIT</span><span>01 / 01</span></div>
+            <div class="portrait-mark">AS<span>.</span></div>
+            <p class="portrait-note">Replace with<br>your portrait</p>
+            <div class="portrait-coordinate">48°51' N<br>2°21' E</div>
+          </div>
+          <div class="hero-visual-meta"><span>PARIS PHYSICS MASTER</span><span>IAPS · 2026—27</span></div>
+        </div>
+      </div>
+      <div class="hero-index wrap"><span>01 — PROFILE</span><a href="#about" aria-label="Scroll to about section">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="affiliations" aria-label="Selected institutions and organisations">
+      <div class="wrap affiliations-inner">
+        <span class="eyebrow">SELECTED AFFILIATIONS</span>
+        <div class="affiliation-list">
+          <span>Université Paris Cité</span><i></i><span>University of Delhi</span><i></i><span>Caltech SURF</span><i></i><span>IUPAP</span><i></i><span>IAPS</span><i></i><span>INPS</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--about wrap" id="about">
+      <div class="section-aside"><span class="section-number">03 / 09</span><span class="aside-rule"></span><span class="eyebrow">THE PROFILE</span></div>
+      <div class="section-main">
+        <div class="section-heading-row">
+          <div><p class="eyebrow eyebrow--accent">ABOUT</p><h2>Between discovery<br>and <em>opportunity.</em></h2></div>
+          <p class="section-deck">A research path shaped by curiosity about the universe—and by a parallel interest in who gets to participate in its exploration.</p>
+        </div>
+        <div class="about-copy-grid">
+          <div class="about-copy">
+            <p class="lead-copy">I am interested in two connected questions: how we understand the universe, and how more people can take part in that work.</p>
+            <p>I am currently a Master's student in the Paris Physics Master at Université Paris Cité. My research experience spans Fast Radio Burst scintillation analysis at the California Institute of Technology, cosmological modelling at Miranda House, and gamma-ray source studies at the AstroParticle and Cosmology Laboratory in Paris.</p>
+            <p>Alongside research, I work on the educational and institutional pathways through which students encounter physics. I founded the Indian Network of Physics Students (INPS) and have worked on student-led conferences, academic exchange, science outreach and educational initiatives in India. As Vice President of IAPS, I contribute to international advocacy, outreach, student representation and cooperation across the wider scientific community.</p>
+          </div>
+          <div class="about-copy about-copy--secondary">
+            <p>These experiences have shaped my interest in physics education research, science communication, science diplomacy and the role of science in public policy. I am interested not only in how scientific knowledge is produced, but also in how it is taught, shared and made accessible.</p>
+            <p>My academic direction remains rooted in astrophysics, with longer-term interests in multi-messenger astronomy. Alongside that research trajectory, I hope to contribute to stronger educational pathways and institutions that connect scientific talent with opportunity, particularly in communities and regions that remain underrepresented in international science.</p>
+            <blockquote class="about-note"><span class="signal signal--red" aria-hidden="true"></span><div><p>“Research is funded through public money, so people should understand where that money is going.”</p><cite>— Anant Singh, <a href="{{CAREERS360_URL}}" target="_blank" rel="noopener noreferrer">Careers360 · October 2026</a></cite></div></blockquote>
+          </div>
+        </div>
+        <div class="trajectory">
+          <div class="trajectory-item"><span class="eyebrow">01 · INDIA</span><h3>New Delhi</h3><p>University of Delhi<br>Research · INPS · Outreach</p></div>
+          <div class="trajectory-item"><span class="eyebrow">02 · UNITED STATES</span><h3>Pasadena</h3><p>Caltech SURF<br>Fast Radio Burst research · 2023</p></div>
+          <div class="trajectory-item"><span class="eyebrow">03 · FRANCE</span><h3>Paris</h3><p>Université Paris Cité<br>Paris Physics Master · APC Laboratory</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--research" id="research">
+      <div class="wrap section-layout">
+        <div class="section-aside"><span class="section-number">04 / 09</span><span class="aside-rule"></span><span class="eyebrow">ACADEMIA</span></div>
+        <div class="section-main">
+          <div class="section-heading-row">
+            <div><p class="eyebrow eyebrow--accent">RESEARCH & ACADEMIC WORK</p><h2>Questions across<br><em>cosmic scales.</em></h2></div>
+            <p class="section-deck">Research experience in transient astrophysical signals, observational cosmology and high-energy gamma-ray astrophysics.</p>
+          </div>
+          <div class="research-list">
+            <article class="research-item">
+              <div class="research-index">01</div>
+              <div class="research-meta"><span class="eyebrow">MAY—JULY 2026</span><span>PARIS, FRANCE</span></div>
+              <div class="research-content"><h3>Gamma-ray emission & LHAASO source studies</h3><p class="research-affiliation">AstroParticle and Cosmology (APC) Laboratory · Université Paris Cité</p><p>Modelling gamma-ray emission and testing candidate sources in the second LHAASO catalogue, using <code>gammapy</code> and Monte Carlo simulations.</p><div class="tag-row"><span>High-energy astrophysics</span><span>Gamma-ray astronomy</span><span>Monte Carlo</span></div></div>
+            </article>
+            <article class="research-item">
+              <div class="research-index">02</div>
+              <div class="research-meta"><span class="eyebrow">UNDERGRADUATE RESEARCH</span><span>NEW DELHI, INDIA</span></div>
+              <div class="research-content"><h3>Fast Radio Bursts & cosmological constraints</h3><p class="research-affiliation">Miranda House · University of Delhi</p><p>Modelling localized FRB dispersion measures alongside Pantheon+ Type Ia supernova data to constrain the Hubble constant, <i>H</i><sub>0</sub>, and evaluate Dynamic Dark Energy models.</p><div class="tag-row"><span>Observational cosmology</span><span>FRBs</span><span>Dark energy</span></div></div>
+            </article>
+            <article class="research-item">
+              <div class="research-index">03</div>
+              <div class="research-meta"><span class="eyebrow">JUNE—AUGUST 2023</span><span>PASADENA, USA</span></div>
+              <div class="research-content"><h3>Fast Radio Burst scintillation analysis</h3><p class="research-affiliation">California Institute of Technology · Summer Undergraduate Research Fellowship</p><p>As a Caltech SURF Fellow in 2023, developed data-analysis pipelines to measure Fast Radio Burst scintillations using CHIME/FRB Catalog 1 data.</p><div class="tag-row"><span>CHIME/FRB</span><span>Signal analysis</span><span>Scintillation</span></div></div>
+            </article>
+          </div>
+          <div class="academic-record">
+            <div class="academic-record-title"><span class="eyebrow">ACADEMIC TRAINING</span><h3>Physics & mathematics</h3></div>
+            <div class="academic-record-entry"><strong>Paris Physics Master</strong><span>Université Paris Cité · 2025—present</span><p>Master's student in Physics at Université Paris Cité. The Paris Physics Master is jointly run with Sorbonne Université.</p><span class="credential-note">SMARTS-UP SCHOLAR</span></div>
+            <div class="academic-record-entry"><strong>B.Sc. (Hons.) Physics with Minor in Mathematics</strong><span>Rajdhani College · University of Delhi · July 2025</span></div>
+          </div>
+          <div class="interests-line"><span class="eyebrow">RESEARCH INTERESTS</span><p>Observational Cosmology <i>·</i> Multi-Messenger Astrophysics <i>·</i> High-Energy Astrophysics <i>·</i> Fast Radio Bursts <i>·</i> Gamma-Ray Astronomy <i>·</i> Atmospheric Physics <i>·</i> Satellite Engineering <i>·</i> Physics Education Research</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--practice wrap" id="practice">
+      <div class="section-aside"><span class="section-number">05 / 09</span><span class="aside-rule"></span><span class="eyebrow">PUBLIC ENGAGEMENT</span></div>
+      <div class="section-main">
+        <div class="section-heading-row">
+          <div><p class="eyebrow eyebrow--accent">PHYSICS EDUCATION, OUTREACH & PUBLIC ENGAGEMENT</p><h2>Making room<br>for <em>participation.</em></h2></div>
+          <p class="section-deck">A parallel strand of work focused on how students encounter physics: through resources, events, competitions and communities.</p>
+        </div>
+        <div class="practice-grid">
+          <article class="practice-feature">
+            <div class="practice-feature-top"><span class="eyebrow">CONFERENCE ORGANISATION · 2025</span><span class="practice-mark">01</span></div>
+            <h3>AESCAP 2025</h3>
+            <p class="practice-role">Head Organizer · LC Delhi, IAPS</p>
+            <p>Led the organisation of AESCAP 2025, a student-led academic conference and outreach initiative bringing together students and researchers through presentations, workshops and exchange.</p>
+            <span class="practice-bottom">ACADEMIC EXCHANGE <i>／</i> STUDENT ORGANISATION</span>
+          </article>
+          <article class="practice-feature practice-feature--tinted">
+            <div class="practice-feature-top"><span class="eyebrow">STUDENT PHYSICS COMPETITION · 2022—2025</span><span class="practice-mark">02</span></div>
+            <h3>Indian Young Physicists League</h3>
+            <p class="practice-role">Chief Organizer</p>
+            <p>Worked across multiple editions of the Indian Young Physicists League, supporting a student competition built around collaborative problem-solving and the practice of theoretical physics.</p>
+            <span class="practice-bottom">PHYSICS EDUCATION <i>／</i> COMPETITION</span>
+          </article>
+          <article class="practice-wide">
+            <div><span class="eyebrow">EDUCATIONAL RESOURCES & OUTREACH</span><h3>From the classroom to the wider physics community.</h3></div>
+            <p>Contributed to student-facing outreach and educational activities through IAPS and INPS. In 2022, the first IAPS School Day in Delhi brought students from Rajdhani College, Miranda House and Hansraj College together around physics. Further work has included school-level engagement and activities during the International Year of Quantum Science and Technology in 2025.</p>
+            <span class="practice-mark">03</span>
+          </article>
+        </div>
+        <p class="section-footnote">This section will grow as new education research, outreach programmes and public-engagement work are documented.</p>
+      </div>
+    </section>
+
+    <section class="section section--leadership" id="leadership">
+      <div class="wrap section-layout">
+        <div class="section-aside"><span class="section-number">06 / 09</span><span class="aside-rule"></span><span class="eyebrow">INSTITUTIONS</span></div>
+        <div class="section-main">
+          <div class="section-heading-row">
+            <div><p class="eyebrow eyebrow--light-accent">INSTITUTIONAL LEADERSHIP & INTERNATIONAL COOPERATION</p><h2>Working across<br><em>institutions.</em></h2></div>
+            <p class="section-deck section-deck--light">Student representation, international cooperation and the patient work of building structures that outlast individual terms.</p>
+          </div>
+          <article class="leadership-feature">
+            <div class="leadership-feature-head"><span class="eyebrow eyebrow--light">01 · INTERNATIONAL ASSOCIATION OF PHYSICS STUDENTS</span><span class="term-label">2026—2027</span></div>
+            <div class="leadership-feature-body"><div><h3>IAPS<span class="red-period">.</span></h3><p class="leadership-title">Vice President & Outreach and Advocacy Manager</p></div><p>I serve on the IAPS executive committee, contributing to global outreach, advocacy and the international representation of physics students. I am the first Indian and first South Asian elected to the association's top executive bureau.</p></div>
+            <div class="leadership-subnote"><span class="signal signal--green"></span><p><strong>International representation · IPPOG at CERN</strong><br>Represented IAPS at the 32nd International Particle Physics Outreach Group Collaboration Meeting at CERN in November 2026.</p></div>
+            <a class="inline-arrow inline-arrow--light" href="{{IAPS_URL}}" target="_blank" rel="noopener noreferrer">IAPS Executive Committee <span>↗</span></a>
+          </article>
+          <div class="leadership-grid">
+            <article class="leadership-item leadership-item--icps">
+              <span class="eyebrow eyebrow--light">02 · INTERNATIONAL CONFERENCE OF PHYSICS STUDENTS</span>
+              <div class="icps-year">2028<span>.</span></div>
+              <h3>New Delhi, India</h3>
+              <p class="leadership-title">Lead Architect of the Winning Bid · Proposed Head Organizer</p>
+              <p>Led the development of the successful bid to bring ICPS to India for the first time. The bid was selected during ICPS 2026 in Rabat, Morocco.</p>
+            </article>
+            <article class="leadership-item">
+              <span class="eyebrow eyebrow--light">03 · INTERNATIONAL UNION OF PURE AND APPLIED PHYSICS</span>
+              <h3>IUPAP</h3>
+              <p class="leadership-title">Vice-Chair, AC5 Council · ex officio</p>
+              <p>Contributing to the Affiliated Commission of Physics Students, which connects IAPS and IUPAP.</p>
+              <p class="leadership-title leadership-title--second">Associate Member · Commission C14</p>
+              <p>Associate Member of the IUPAP Commission on Physics Education, beginning in late 2026.</p>
+              <div class="institution-links"><a class="inline-arrow inline-arrow--light" href="{{IUPAP_URL}}" target="_blank" rel="noopener noreferrer">IUPAP AC5 <span>↗</span></a><a class="inline-arrow inline-arrow--light" href="{{IUPAP_C14_URL}}" target="_blank" rel="noopener noreferrer">Commission C14 <span>↗</span></a></div>
+            </article>
+            <article class="leadership-item leadership-item--inps">
+              <span class="eyebrow eyebrow--light">04 · INDIAN NETWORK OF PHYSICS STUDENTS</span>
+              <h3>INPS</h3>
+              <p class="leadership-title">Founder & Chairperson of the Governing Council</p>
+              <p>Founded INPS to strengthen student participation, academic exchange and connections between Indian physics students and the international scientific community.</p>
+              <p>In October 2026, INPS signed a collaborative MoU with the Indian Association of Physics Teachers at its 40th Convention.</p>
+              <a class="inline-arrow inline-arrow--light" href="{{INPS_URL}}" target="_blank" rel="noopener noreferrer">Indian Network of Physics Students <span>↗</span></a>
+            </article>
+          </div>
+          <div class="representation-line"><span class="eyebrow eyebrow--light">INTERNATIONAL CONFERENCE OF PHYSICS STUDENTS</span><p>ICPS 2024 <span>·</span> Tbilisi, Georgia <i>／</i> ICPS 2026 <span>·</span> Rabat, Morocco <i>／</i> ICPS 2028 <span>·</span> New Delhi, India</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--press wrap" id="press">
+      <div class="section-aside"><span class="section-number">07 / 09</span><span class="aside-rule"></span><span class="eyebrow">PUBLIC RECORD</span></div>
+      <div class="section-main">
+        <div class="section-heading-row">
+          <div><p class="eyebrow eyebrow--accent">MEDIA, SPEAKING & PRESS</p><h2>In the <em>public record.</em></h2></div>
+          <p class="section-deck">Selected coverage and speaking engagements on astrophysics, student representation and the work of bringing an international physics conference to India.</p>
+        </div>
+        <div class="press-layout">
+          <a class="press-feature" href="{{CAREERS360_URL}}" target="_blank" rel="noopener noreferrer">
+            <div class="press-feature-top"><span class="publication publication--careers">C360<span>.</span></span><span class="eyebrow">FEATURE · 05 OCT 2026</span></div>
+            <div class="press-feature-title"><span class="eyebrow eyebrow--red">CAREERS360</span><h3>DU college students plan 5 years to bring International Conference of Physics Students to India</h3><p>Reporting on the path from student organising in Delhi to the successful ICPS 2028 host bid.</p></div>
+            <div class="press-feature-bottom"><span>READ THE FEATURE</span><span class="press-arrow">↗</span></div>
+          </a>
+          <div class="press-rail">
+            <a class="press-item" href="{{DUBEAT_URL}}" target="_blank" rel="noopener noreferrer">
+              <div class="press-item-top"><span class="publication">DU<span>BEAT</span></span><span class="eyebrow">20 SEP 2026</span></div>
+              <h3>DU Graduate Becomes Vice President of the International Association of Physics Students</h3>
+              <span class="press-item-link">READ COVERAGE <b>↗</b></span>
+            </a>
+            <a class="press-item" href="{{ORGANISER_URL}}" target="_blank" rel="noopener noreferrer">
+              <div class="press-item-top"><span class="publication publication--organiser">ORGANISER</span><span class="eyebrow">25 SEP 2026</span></div>
+              <h3>IAPS Vice Presidency and the ICPS 2028 bid</h3>
+              <span class="press-item-link">READ COVERAGE <b>↗</b></span>
+            </a>
+          </div>
+        </div>
+        <!-- TEMPLATE: COPY THIS ARTICLE BLOCK TO ADD NEW MEDIA COVERAGE. Replace publisher, date, headline, and the verified article URL. Keep the publication name as text; do not paste a raw URL as the visible title.
+        <a class="press-item" href="https://publisher.example/article" target="_blank" rel="noopener noreferrer">
+          <div class="press-item-top"><span class="publication">PUBLICATION</span><span class="eyebrow">DATE</span></div>
+          <h3>Verified article headline</h3>
+          <span class="press-item-link">READ COVERAGE <b>↗</b></span>
+        </a>
+        -->
+        <div class="talks-block">
+          <div class="talks-heading"><p class="eyebrow eyebrow--accent">SELECTED TALKS & LECTURES</p><span class="eyebrow">PUBLIC ENGAGEMENT</span></div>
+          <article class="talk-item"><span class="talk-year">2026</span><div><h3>Science Diplomacy for Next Generation Astrophysicists</h3><p>Astronomical Hub International Summer School for Astronomy · AHISSA '26</p><p class="talk-summary">A lecture connecting multi-messenger astrophysics with the international cooperation and science diplomacy that make large-scale research possible.</p></div><a href="{{AHISSA_URL}}" target="_blank" rel="noopener noreferrer" aria-label="View Astronomical Hub public event coverage">↗</a></article>
+          <article class="talk-item"><span class="talk-year">2026</span><div><h3>Cosmic Signals & the Future of Astrophysics</h3><p>Invited Speaker / Lecturer · November 2026</p></div><span class="talk-type">LECTURE</span></article>
+          <article class="talk-item"><span class="talk-year">2024</span><div><h3>Fast Radio Bursts & Science Outreach</h3><p>Workshops · International Conference of Physics Students · Tbilisi, Georgia</p></div><span class="talk-type">WORKSHOPS</span></article>
+        </div>
+        <!-- TEMPLATE: COPY THIS TALK BLOCK TO ADD A SPEAKING ENGAGEMENT. Keep the official title, event, date and role accurate.
+        <article class="talk-item"><span class="talk-year">YEAR</span><div><h3>Official talk title</h3><p>Event name · City / Country</p></div><span class="talk-type">LECTURE</span></article>
+        -->
+        <div class="press-kit" id="press-kit">
+          <div class="press-kit-label"><span class="eyebrow eyebrow--light">FOR EVENT ORGANISERS & EDITORS</span><span class="press-kit-mark">BIO / 01</span></div>
+          <div class="press-kit-body"><div><h3>Official press bio</h3><p>A concise biography for event programmes, institutional introductions and speaker announcements.</p></div><div class="press-bio-text" id="press-bio-text">{{PRESS_BIO}}</div></div>
+          <div class="press-kit-actions"><button class="button button--light button--small" type="button" data-copy-bio>Copy press bio <span aria-hidden="true">↗</span></button><span class="copy-feedback" aria-live="polite"></span>{{CV_ACTION}}</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--initiatives wrap" id="initiatives">
+      <div class="section-aside"><span class="section-number">08 / 09</span><span class="aside-rule"></span><span class="eyebrow">INDEPENDENT WORK</span></div>
+      <div class="section-main">
+        <div class="section-heading-row">
+          <div><p class="eyebrow eyebrow--accent">VENTURES & SCIENCE COMMUNICATION</p><h2>Beyond the<br><em>laboratory.</em></h2></div>
+          <p class="section-deck">Independent initiatives exploring how scientific ideas and practical skills can reach wider audiences.</p>
+        </div>
+        <div class="initiative-grid">
+          <article class="initiative initiative--anantaniium">
+            <div class="initiative-head"><span class="eyebrow">SCIENCE COMMUNICATION · FOUNDER</span><span class="initiative-index">A / 01</span></div>
+            <h3>Anantaniium<span class="green-period">.</span></h3>
+            <p>A science-communication platform exploring physics, mathematics, game theory and history through accessible educational content on YouTube and Instagram.</p>
+            <div class="initiative-links"><a href="{{YOUTUBE_URL}}" target="_blank" rel="noopener noreferrer">YouTube ↗</a><a href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
+          </article>
+          <article class="initiative initiative--aryuk">
+            <div class="initiative-head"><span class="eyebrow">EDUCATION & UPSKILLING · CO-FOUNDER</span><span class="initiative-index">B / 02</span></div>
+            <h3>ARYUK<span class="red-period">.</span></h3>
+            <p>An upskilling venture co-founded to equip students in India with workplace readiness and software skills.</p>
+            <span class="initiative-note">IN DEVELOPMENT</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="wrap section-layout">
+        <div class="section-aside"><span class="section-number">09 / 09</span><span class="aside-rule"></span><span class="eyebrow eyebrow--light">CONNECT</span></div>
+        <div class="section-main">
+          <div class="contact-heading"><p class="eyebrow eyebrow--light-accent">CONTACT & DIRECTORY</p><h2>Continue<br>the <em>conversation.</em></h2><p>For academic correspondence, institutional collaborations, speaking engagements and work related to physics education or student representation.</p></div>
+          <div class="contact-bottom">
+            <div class="contact-email-block"><span class="eyebrow eyebrow--light">PROFESSIONAL CORRESPONDENCE</span><a class="contact-email" href="mailto:{{EMAIL}}">{{EMAIL}}</a><button class="copy-email" type="button" data-copy-email>Copy email <span aria-hidden="true">↗</span></button><span class="copy-feedback" aria-live="polite"></span></div>
+            <div class="directory"><span class="eyebrow eyebrow--light">PROFILES & IDENTIFIERS</span>{{SOCIAL_LINKS}}</div>
+          </div>
+          <div class="contact-location"><span>{{LOCATION}}</span><span>AVAILABLE FOR ACADEMIC & INSTITUTIONAL COLLABORATION</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="wordmark" href="#top">ANANT<span class="wordmark-dot">.</span></a>
+      <p>Researching the universe. Widening access to its study.</p>
+      <div class="footer-meta"><span>© <span id="year">2026</span> Anant Singh</span><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+  <script src="/script.js" defer></script>
+</body>
+</html>

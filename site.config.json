@@ -1,0 +1,31 @@
+{
+  "siteUrl": "https://anantsingh.github.io",
+  "siteName": "Anant Singh",
+  "siteTitle": "Anant Singh — Astrophysics, Physics Education & Public Engagement",
+  "description": "Anant Singh is a Physics Master's student at Université Paris Cité, an astrophysics researcher and Vice President of the International Association of Physics Students (IAPS). His work connects astrophysics, physics education, public engagement and international scientific cooperation.",
+  "email": "anant.singh@iaps.info",
+  "location": "Paris, France · New Delhi, India",
+  "portraitImage": "",
+  "ogImage": "/assets/og-image.png",
+  "cvPdf": "",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/anantaniium/",
+    "github": "https://github.com/anantsingh",
+    "instagram": "https://www.instagram.com/anantaniium/",
+    "youtube": "https://www.youtube.com/@anantaniium",
+    "orcid": "",
+    "googleScholar": ""
+  },
+  "links": {
+    "iapsExecutiveCommittee": "https://iaps.info/about/executive-committee/",
+    "iupapAc5": "https://iupap.org/who-we-are/internal-organization/affiliated-commissions/ac5-affiliated-commission-of-physics-students/",
+    "careers360": "https://news.careers360.com/delhi-university-du-rajdhani-college-first-international-conference-of-physics-students-iapt-iaps-miranda-house-hansraj-icps-2028",
+    "duBeat": "https://dubeat.com/2026/09/20/du-graduate-becomes-vice-president-of-the-international-association-of-physics-students/",
+    "organiser": "https://organiser.org/2026/09/25/382729/bharat/indian-youth-takes-centre-stage-anant-singh-wins-iaps-vp-post-brings-worlds-biggest-physics-student-meet-to-delhi/",
+    "ahissa": "https://www.linkedin.com/company/astronomical-hub/",
+    "inps": "https://www.inps.info/",
+    "iupapC14": "https://iupap.org/who-we-are/internal-organization/commissions/c14-physics-education/"
+  },
+  "pressBio": "Anant Singh is a Master's student in Physics at Université Paris Cité and an astrophysics researcher whose work has included Fast Radio Burst scintillation analysis, cosmological modelling and gamma-ray source studies. He serves as Vice President and Outreach and Advocacy Manager of the International Association of Physics Students (IAPS), and is the Founder and Chairperson of the Governing Council of the Indian Network of Physics Students (INPS). His work spans astrophysics, physics education, science communication and international scientific cooperation.",
+  "portraitAlt": "Portrait of Anant Singh"
+}
